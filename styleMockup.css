@@ -76,12 +76,13 @@ header > p {
   margin: 20px 0px;
   font: 15px Verdana, sans-serif;
   font-weight: bold;
-  border-right: 1px solid #000;
   padding: 0px 20px;
 }
 
-.navigation_bar.elements div:nth-child(4) {
-  border-right: none;
+/*немного переписал твой код*/
+
+.navigation_bar.elements div:not(:last-child) {
+  border-right: 1px solid #000;
 }
 
 .page_content.elements {
